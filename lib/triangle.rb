@@ -10,10 +10,6 @@ end
 
 
 def kind
-  sides= [@s1, @s2, @s3]
-  if sides.any?{|side| side <= 0} || ((@s1 + @s2) <= @s3)
-    raise TriangleError
-  else 
     if (@s1 == @s2) && (@s2 == @s3)
       :equilateral
     elsif (@s1 == @s2) || (@s1 == @s3) || (@s2 == @s3)
@@ -22,7 +18,14 @@ def kind
       :scalene
      end
    end
-  end
+  
+  
+  
+  def real_triangle
+    sides= [@s1, @s2, @s3]
+    if sides.any?{|side| side <= 0} || ((@s1 + @s2) <= @s3)
+      raise TriangleError
+  else 
 
 end
   
