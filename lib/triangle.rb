@@ -17,10 +17,11 @@ def kind()
     elsif (@s1 == @s2) or (@s1 == @s3)
   end
 end
+
+end
   
   
 class TriangleError < StandardError
 
-  
   
 end
