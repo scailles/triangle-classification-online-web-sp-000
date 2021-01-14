@@ -13,8 +13,6 @@ def kind
   sides= [@s1, @s2, @s3]
   if sides.any?{|side| side <= 0} || ((@s1 + @s2) <= @s3)
     raise TriangleError
-    elsif (@s1 + @s2 <= @s3) or (@s1+@s3 <= @s2) or (@s2+@s3 <= @s1)
-    raise TriangleError
   else 
     if (@s1 == @s2) && (@s2 == @s3)
       :equilateral
