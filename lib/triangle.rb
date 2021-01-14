@@ -25,7 +25,8 @@ def kind
     sides= [@s1, @s2, @s3]
     if sides.any?{|side| side <= 0} || ((@s1 + @s2) <= @s3)
       raise TriangleError
-  else 
+    end
+  end
 
 end
   
