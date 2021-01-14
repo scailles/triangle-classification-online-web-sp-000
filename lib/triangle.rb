@@ -26,7 +26,7 @@ def kind
   
   
   def real_triangle
-    if @sides.any?{|side| side <= 0} 
+    if @sides.any?{|side| side == 0} 
       raise TriangleError
     end
   end
