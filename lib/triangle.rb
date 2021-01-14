@@ -17,7 +17,8 @@ def kind()
       :equilateral
     elsif (@s1 == @s2) or (@s1 == @s3)
       :isosceles
-      
+    else 
+      :scalene
      end
    end
   end
