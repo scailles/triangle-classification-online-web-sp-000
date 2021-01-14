@@ -15,7 +15,7 @@ def kind()
   else 
     if (@s1 == @s2) && (@s2 == @s3)
       :equilateral
-    elsif (@s1 == @s2) or (@s1 == @s3)
+    elsif (@s1 == @s2) or (@s1 == @s3) or (@s2 == @s3)
       :isosceles
     else 
       :scalene
