@@ -27,7 +27,7 @@ def kind
   
   def real_triangle
     if @sides.any?{|side| side == 0} 
-      raise TriangleError
+      raise TriangleError|| ((@s1 + @s2) <= @s3
     end
   end
   
