@@ -6,7 +6,8 @@ def initialize(s1,s2,s3)
   @s1 = s1
   @s2 = s2
   @s3 = s3
-  sides= [@]
+  sides= [@s1, @s2, @s3]
+  sides.sort!
 end
 
 
