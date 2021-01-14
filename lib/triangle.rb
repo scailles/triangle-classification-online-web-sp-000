@@ -11,7 +11,7 @@ end
 
 def kind
   sides= [@s1, @s2, @s3]
-  if sides.any?{|side| side <= 0} 
+  if sides.any?{|side| side <= 0} || ((@sides[0] + @sides[1]) <= @sides[2])
     raise TriangleError
     elsif (@s1 + @s2 <= @s3) or (@s1+@s3 <= @s2) or (@s2+@s3 <= @s1)
     raise TriangleError
