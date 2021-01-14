@@ -30,12 +30,12 @@ def kind
       raise TriangleError
     end
   end
-
-end
   
   #|| ((@s1 + @s2) <= @s3) || sides.all?{|side| side = 0}
       #raise TriangleError
-  
+ 
   
 class TriangleError < StandardError
+end
+
 end
