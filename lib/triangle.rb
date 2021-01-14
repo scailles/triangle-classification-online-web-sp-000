@@ -15,6 +15,7 @@ def kind()
     if (@s1 == @s2) && (@s2 == @s3)
       :equilateral
     elsif (@s1 == @s2) or (@s1 == @s3)
+  end
 end
   
   
